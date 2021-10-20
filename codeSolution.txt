@@ -1,3 +1,5 @@
+// simple array sum ... hackerrank question (algorithm section)
+
 #include <bits/stdc++.h>
 
 using namespace std;
