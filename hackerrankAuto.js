@@ -4,7 +4,7 @@ let minimist = require('minimist')
 let puppeteer = require('puppeteer')
 let fs = require('fs');
 
-let args = minimist(process.argv)
+let args = minimist(process.argv);
 
 //reading config.json and converting to json object for accessing the data 
 let configJSON = fs.readFileSync(args.config , "utf-8");
@@ -30,7 +30,7 @@ async function run(){
 
 
     //visting the hackerrank url
-    await page.goto(args.url)
+    await page.goto(args.url);
 
     //waiting for the login selector to load & clicking the first login button present on screen
     await page.waitForSelector("a[href = 'https://www.hackerrank.com/access-account/']");
@@ -92,7 +92,5 @@ async function run(){
     await page.waitFor(12000);
     await page.close();
 
-
 }
-
 run()
