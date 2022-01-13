@@ -27,8 +27,6 @@ async function run(){
     let pages = await browser.pages();
     let page = pages[0];
 
-
-
     //visting the hackerrank url
     await page.goto(args.url);
 
